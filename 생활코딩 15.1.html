@@ -4,18 +4,42 @@
      <title>WEB - HTML</title>
     <meta charset="utf-8">
     <style>
-    a {
-      color:red;
-    }
+      h1{
+          font-size: 45px;
+          text-align: center;
+          border-bottom: 1px solid gray;
+          margin: 0;
+          padding: 20px;
+      }
+      # grid ol {
+          border-right: 1px solid gray;
+          width: 100px;
+          margin: 0;
+          padding: 20px;
+          padding-left: 33px;
+      }
+      a {
+         color:blakc;
+         text-decoration: none;
+       }
+      #grid {
+        display:grid;
+        grid-template-columns: 150px 1fr;
+      } 
+      #article {
+        padding-left: 25px;
+      }
     </style>
   </head>
   <body>
-<h1><a href="index.html">WEB</a></h1>
-<ol>
-  <li><a href="생활코딩 15.1.html">HTML</a></li>
-  <li><a href="생활코딩 15.2.html">CSS</a></li>
-  <li><a href="생활코딩 15.3.html">JavaScript</a></li>
-</ol>
+    <h1><a href="index.html">WEB</a></h1>
+    <div id="grid">
+    <ol>
+      <li><a href="생활코딩 15.1.html">HTML</a></li>
+      <li><a href="생활코딩 15.2.html">CSS</a></li>
+      <li><a href="생활코딩 15.3.html">JavaScript</a></li>
+    </ol>
+      <div id="article">
 <h2>HTML</h2>
 <p><a href="https://www.w3.org/TR/2014/REC-html5-20141028/"target="_blank" title="html5 specification">
 Hypertext Markup Language (HTML)</a> is
@@ -35,5 +59,7 @@ It provides a means to create structured docuemtns by
 denoting structural semantics for text such as headings,
 paragraphs, lists, links, quotes and other items.<br><br>
 HTML elements aredelineated by tags, written angle brackets.</p>
-</body>
+      </div>
+    </div>
+  </body>
 </html>
